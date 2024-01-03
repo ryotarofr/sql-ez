@@ -39,3 +39,21 @@ NULL じゃないもの
 ```bash
 SELECT * FROM users where memo IS NOT NULL;
 ```
+
+部分一致
+
+```bash
+SELECT * FROM users WHERE name LIKE '%木%';
+```
+
+前方一致(木ではじまる name)
+
+```bash
+SELECT * FROM users WHERE name LIKE '木%';
+```
+
+後方一致(木で終わる name)
+
+```bash
+SELECT * FROM users WHERE name LIKE '%木';
+```
